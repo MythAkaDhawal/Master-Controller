@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesture PC Control System</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            background: #161b22;
+            border-bottom: 1px solid #30363d;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #161b22;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #30363d;
+            box-shadow: 0px 0px 10px #00000050;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 12px 5px;
+            padding: 14px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            background: #238636;
+            border: none;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #2ea043;
+        }
+
+        .btn-secondary {
+            background: #454f59;
+        }
+
+        .btn-secondary:hover {
+            background: #596573;
+        }
+
+        .section-title {
+            margin-top: 30px;
+            font-size: 22px;
+            border-left: 5px solid #238636;
+            padding-left: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #8b949e;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Gesture PC Control System</h1>
+    <p>Control your computer using hand movements — powered by AI</p>
+</header>
+
+<div class="container">
+    
+    <h2 class="section-title">📌 Project Overview</h2>
+    <p>
+        This system allows you to control your computer using real-time hand gestures 
+        using your webcam.  
+        Movements are tracked → gestures recognized → actions executed on your PC.
+    </p>
+
+    <h2 class="section-title">🚀 Run the System</h2>
+    <p>The gesture control can only run on your local computer (not online).</p>
+
+    <button class="btn" onclick="runPython()">▶ Run Gesture Control</button>
+
+    <script>
+        function runPython() {
+            alert("To run this program, open a terminal and type:\n\npython main.py\n\nBrowsers cannot run Python automatically.");
+        }
+    </script>
+
+    <h2 class="section-title">📁 Project Files</h2>
+    <ul>
+        <li>main.py</li>
+        <li>config.py</li>
+        <li>gesture_recognizer.py</li>
+        <li>hand_tracking.py</li>
+        <li>overlay_renderer.py</li>
+        <li>system_control.py</li>
+        <li>utils.py</li>
+    </ul>
+
+    <h2 class="section-title">🔗 Useful Links</h2>
+
+    <a href="https://github.com/YOUR_USERNAME/YOUR_REPO_NAME" 
+       class="btn-secondary" target="_blank">📂 Open GitHub Repository</a>
+
+    <a href="#" class="btn-secondary">📘 Documentation (optional)</a>
+
+</div>
+
+<footer>
+    Built with ❤ by Dhawal | AI-powered Gesture Control System
+</footer>
+
+</body>
+</html>
