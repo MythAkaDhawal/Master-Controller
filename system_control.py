@@ -7,35 +7,22 @@ from utils import norm_dist
 pyautogui.FAILSAFE = False  # optional: set True if you want a physical mouse corner safety
 
 class SystemController:
-    def __init__(self, cfg=None):
-        self.cfg = cfg if cfg is not None else config
-        self.action_state = {"click": False, "drag": False, "scroll": False}
-        self._dragging = False
-        self._last_gesture_time = 0.0
+    class SystemController:
+    def __init__(self):
+        self.status = "idle"
 
-    def _safe_click(self):
-        try:
-            pyautogui.click(_pause=False)
-        except Exception:
-            pass
+    def start_system(self):
+        self.status = "running"
+        print("System started.")
 
-    def _safe_double_click(self):
-        try:
-            pyautogui.doubleClick(_pause=False)
-        except Exception:
-            pass
+    def stop_system(self):
+        self.status = "stopped"
+        print("System stopped.")
 
-    def _safe_mouse_down(self):
-        try:
-            pyautogui.mouseDown(_pause=False)
-        except Exception:
-            pass
+    def recalibrate(self):
+        print("Recalibrating…")
+        return "Recalibration complete."
 
-    def _safe_mouse_up(self):
-        try:
-            pyautogui.mouseUp(_pause=False)
-        except Exception:
-            pass
 
     def handle_gesture(self, gesture, hands_data, frame_shape):
         """
